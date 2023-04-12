@@ -9,12 +9,12 @@ public class Main {
        Kahve secilenKahve= kahveMakinasi.kahveSecimi(hangiKahve);
         System.out.println(secilenKahve.toString()+" Hazırlanıyor.");
 
-        System.out.println("Süt eklememizi ister misiniz? (Evet veya Hayır olarak cevaplayınız):    ");
+        System.out.println("Süt eklenmesini ister misiniz? (Evet veya Hayır olarak cevaplayınız):    ");
         Scanner input2=new Scanner(System.in);
         String sutlu=input2.nextLine().toLowerCase();
         kahveMakinasi.sutSecimi(secilenKahve,sutlu);
         
-        System.out.println("Şeker eklememizi ister misiniz? (Evet veya Hayır olarak cevaplayınız)");
+        System.out.println("Şeker eklenmesini ister misiniz? (Evet veya Hayır olarak cevaplayınız)");
         Scanner input3 = new Scanner(System.in);
         String sekerli = input3.nextLine().toLowerCase();
        boolean sekerEkleme= kahveMakinasi.sekerSecimi(secilenKahve,sekerli);
